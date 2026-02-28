@@ -13,14 +13,14 @@
 
 2. 安装依赖包
    
-```bash
+   ```bash
    pip install -r requirements.txt
    ```
 
 1. 运行程序
    在命令行进入程序目录，执行：
    ```bash
-   python online_baodao.py
+   python online_enrollment.py
    ```
 
 ### 2. 从二进制运行（Windows）
