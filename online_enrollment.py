@@ -180,10 +180,10 @@ if final_response.status_code == 302:
         if not os.path.exists(img_path):
             print("文件路径不存在，请重新输入。")
             img_path=None
-        if not os.path.isfile(img_path):
+        elif not os.path.isfile(img_path):
             print("输入的路径不是一个文件，请重新输入。")
             img_path=None
-        if img_path and os.path.isfile(img_path):
+        elif img_path and os.path.isfile(img_path):
             try:
                 img = Image.open(img_path)
                 buffered = io.BytesIO()

@@ -51,7 +51,7 @@ class XJTULogin:
 
     def __check_mfa_phone(self,code):
         self.logger.debug('Checking MFA phone from code: %s', code)
-        parmas={'state1':code}
+        parmas={'state':code}
         res=self.webClient.get('https://login.xjtu.edu.cn/cas/mfa/initByType/securephone',params=parmas)
         self.logger.debug('MFA phone check response: %s', res.text)
         if res.status_code!=200:
